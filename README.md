@@ -1,17 +1,17 @@
 # **Reginaldo Web Server** and **Web Downloader**
-**Reginaldo Web Server** and **Reginaldo Web Downloader** are very simple Web Apps written by Reginaldo Coimbra Vieira for his Master Degree Program. They were practical activities by his Ph.D. Professor Flávio Luiz Schiavoni for the Computer Network class.
+**Reginaldo Web Server** and **Reginaldo Web Downloader** are very simple Web Apps written by Reginaldo Coimbra Vieira for his Master Degree Program. They were practical activities by **Ph.D. Professor Flávio Luiz Schiavoni** for his Computer Network class.
 
 Written in Node.js.
 
 ### TOC
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Running **Reginaldo Web Server**](#running-web-server)
-  - [Running **Reginaldo Web Downloader**](#running-web-downloader)
+  - [Running **Reginaldo Web Server**](#running-reginaldo-web-server)
+  - [Running **Reginaldo Web Downloader**](#running-reginaldo-web-downloader)
 - [Files/Folder Structure](#filesfolder-structure)
 - [Built With](#built-with)
 - [Changelog](#changelog)
-- [Authors](#authors)
+- [Author](#author)
 - [License](#license)
 
 
@@ -86,17 +86,17 @@ $ node client http://www.anydomain.whatevertld:8080/whateverpath
 $ node client https://www.anydomain.whatevertld:8181/whateverpath
 ```
 
-### Files/Folders Structure
+### Files/Folder Structure
 Brief content structure:
 
 ```
 ├── client.js			# the **Reginaldo Web Downloader**
-├── getopt.js			# extra lib provided by [node-getopt](https://www.npmjs.com/package/node-getopt)
-├── lib.js				# extra functions written by Reginaldo
+├── getopt.js			# extra lib (node-getopt)
+├── lib.js			# extra functions written by Reginaldo
 ├── LICENSE
 ├── README.md			# this info :)
-├── server.js			# the **Reginaldo Web Server**
-└── wwwroot				# a document root folder sample
+├── server.js			# the Reginaldo Web Server
+└── wwwroot			# a document root folder sample
     └── index.html
 ```
 
@@ -107,7 +107,7 @@ Brief content structure:
 #### V 1.0.0
 Initial Release
 
-### Authors
+### Author
 Reginaldo Coimbra Vieira (recovieira@gmail.com)
 
 ### License

@@ -61,7 +61,7 @@ Valid parameters are:
 
 ```sh
 $ node client -h
-Uso:
+Usage:
   node client [OPTION]
 
 Options:

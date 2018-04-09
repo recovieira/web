@@ -280,7 +280,7 @@ net.createServer((socket) => {
 			// its data is ok.
 			if (doCache && headers['IF-MODIFIED-SINCE'])
 				if (lib.formatDate(new Date(headers['IF-MODIFIED-SINCE'])) == lib.formatDate(new Date(stats.mtime))) {
-					socket.write(new Reply().setReplyType(304).toString());
+					socket.write(new Reply().setReplyType(304).toString(replyid));
 					socket.end();
 					return
 				}
@@ -307,7 +307,7 @@ net.createServer((socket) => {
 				} catch (x) {}
 
 			// Send headers
-			socket.write(reply.toString(), null);
+			socket.write(reply.toString(replyid), null);
 			// Send file using memory efficiently by pipe between streams
 			readstream.pipe(socket)
 		})

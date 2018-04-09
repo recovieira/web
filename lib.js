@@ -19,7 +19,7 @@ function humanSizeFormat(size) {
 // the Portuguese one.
 // Example: 17314856.4874 into 17.314.856,4874
 function formatNumber(number) {
-	return (number + '').replace('.', ',').replace(/(?<=\d)(\d{3})+(?=,|$)/, function(m){return '.' + formatNumber(m)})
+	return (number + '').replace('.', ',').replace(/(\d)((\d{3})+)(,|$)/, function(m,a,b,c,d){return a + '.' + formatNumber(b) + d})
 }
 
 // Export functions

@@ -16,10 +16,10 @@ function humanSizeFormat(size) {
 }
 
 // Translate standard javascript number format into
-// the Portuguese one.
+// the user's locale number format.
 // Example: 17314856.4874 into 17.314.856,4874
 function formatNumber(number) {
-	return (number + '').replace('.', ',').replace(/(\d)((\d{3})+)(,|$)/, function(m,a,b,c,d){return a + '.' + formatNumber(b) + d})
+	return (+number).toLocaleString()
 }
 
 // Export functions
